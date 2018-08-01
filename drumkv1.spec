@@ -8,6 +8,8 @@ Source0:	http://downloads.sourceforge.net/drumkv1/%{name}-%{version}.tar.gz
 # Source0-md5:	f1ca5b84755d481a02f79ad031d18ba5
 URL:		https://drumkv1.sourceforge.io/
 BuildRequires:	Qt5Core-devel
+BuildRequires:	Qt5Gui-devel
+BuildRequires:	Qt5Xml-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	autoconf
 BuildRequires:	jack-audio-connection-kit-devel
@@ -36,10 +38,6 @@ Group:		Applications
 %description common
 drumkv1 is an old-school all-digital drum-kit sampler synthesizer with
 stereo fx.
-
-This package provides a pure stand-alone JACK client with
-JACK-session, NSM (Non Session management) and both JACK MIDI and ALSA
-MIDI input support.
 
 %package jack
 Summary:	Old-school drum-kit sampler - standalone Jack app
